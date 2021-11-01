@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFSPORTS</title>
+    <link rel="stylesheet" href="./ReoRegistro.css">
+</head>
+<body>
+    <main>
+        <div class="main__container">
+            <a class="img" href="./ReoSport.html"><img src="./img-reo-sport/NFSPORTS.png" alt=""></a>
+            <h2>Completa tu registro</h2>
+            <div class="main__container--documento" >
+                <p>Tipo de documento</p>
+                <input list="document" placeholder="Elegir...">
+                <datalist id="document"> 
+                    <option value="Cedula de ciudadanía"></option>
+                    <option value="Cedula extrangera"></option>
+                    <option value="Tarjeta de identidad"></option>
+                </datalist>
+            </div>
+            <div class="main__container--num-doc">
+                <p>Número de documento</p>
+                <input type="text">
+            </div>
+            <div class="main__container--nombre">
+                <p>Nombres</p>
+                <input type="text" placeholder="Fabian">
+            </div>
+            <div class="main__container--apellido">
+                <p>Apellidos</p>
+                <input type="text" placeholder="Restrepo">
+            </div>
+            <div class="main__container--genero">
+                <p>Genero</p>
+                <input list="gen" placeholder="Tu género">
+                <datalist id="gen">
+                    <option value="Hombre"></option>
+                    <option value="Mujer"></option>
+                </datalist>
+            </div>
+            <div class="main__container--correo">
+                <p>Correo</p>
+                <input type="text" placeholder="lfotalora08@gmail.com">
+            </div>
+            <div class="main__container--confir">
+                <p>Confirma tu correo</p>
+                <input type="text">
+            </div>
+            <div class="main__container--contraseña">
+                <p>Contraseña</p>
+                <input type="password">
+            </div>
+            <a class="boton" href="./ReoPerfilInicio.html">INGRESAR</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,346 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-image: url('./img-reo-sport/estadio.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.582);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Aqui empica la parte izquierda que muestra el perfil del usuario */
+
+.perfil {
+    width: 228px;
+    height: 94vh;
+    margin-right: 20px;
+    background: linear-gradient(0deg, rgba(228,230,231,1) 26%, rgb(134, 134, 134) 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil__titulo {
+    width: 100%;
+    height: 30px;
+    background-color: #021e72;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.perfil__titulo h4 {
+    font-size: 1.6rem;
+    color: white;
+}
+.perfil__cesion {
+    width: 214px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #021e72;
+    margin-bottom: 10px;
+}
+.perfil__cesion img {
+    width: 214px;
+    margin-bottom: 15px;
+}
+.perfil__cesion a {
+    font-size: 1.4rem;
+    align-self: flex-start;
+    text-decoration: none;
+}
+.perfil__cesion a:hover {
+    text-decoration: underline;
+}
+.perfil__infor-personal {
+    width: 214px;
+    height: 100px;
+    border-bottom: 1px solid #021e72;
+    margin-bottom: 15px;
+}
+.perfil__infor-personal p {
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+}
+.perfil__infor-torneo {
+    width: 214px;
+    height: 80px;
+}
+.perfil__infor-torneo p {
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+}
+
+/* Aqui empieca la parte central */
+
+
+.campeonatos {
+    width: 534px;
+    height: 94vh;
+    background: linear-gradient(0deg, rgba(160,161,161,1) 8%, rgba(0,15,62,1) 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.campeonatos__titulo {
+    width: 100%;
+    height: 30px;
+    background-color:  #021e72;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+.campeonatos__titulo h4 {
+    font-size: 1.6rem;
+    color: white;
+}
+.campeonatos__logo {
+    width: 473px;
+    margin-bottom: 25px;
+}
+.campeonatos__container {
+    width: 473px;
+    height: 74%;
+}
+.card {
+    width: 230px;
+    height: 101px;
+    background-color: #000f3e;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+}
+.card1,.card3 {
+    margin-right: 9px;
+}
+.card__adentro {
+    width: 220px;
+    height: 100px;
+    display: flex;
+
+}
+.card__adentro img {
+    width: 90px;
+    height: 90px;
+}
+.card__adentro div {
+    width: 127px;
+    height: 89px;
+}
+.card__adentro div h4 {
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgba(160,161,161,1);
+    text-align: center;
+}
+.card__adentro div p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 3px;
+}
+.card__adentro div a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+
+/* Aqui empieza la parte de la izquierda */
+
+.compañeros {
+    width: 272px;
+    height: 50vh;
+    background: linear-gradient(0deg, rgba(228,230,231,1) 26%, rgb(134, 134, 134) 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.compañeros__titulo {
+    width: 100%;
+    height: 30px;
+    background-color: #021e72;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+.compañeros__titulo h4 {
+    font-size: 1.6rem;
+    color: white;
+}
+.compañeros__busqueda {
+    width: 255px;
+    height: 240px;
+    border: 3px double #021e72;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 15px;
+}
+.compañeros__busqueda h6 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.compañeros__busqueda a {
+    background-color: rgb(149, 230, 28);
+    font-size: 1.6rem;
+    padding: 14px 28px;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+}
+.compañeros__busqueda a:hover {
+    background-color: rgb(180, 248, 77);
+}
+.compañeros__busqueda a:active {
+    background-color: rgb(149, 230, 28);
+}
+
+/* AQUI ES CSS DE: ReoPerfil-Principal */
+
+.campeonatos2 {
+    width: 534px;
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.campeonatos2__contain {
+    width: 534px;
+    height: 230px;
+    margin-bottom: 10px;
+}
+.campeonatos2__contain--nav {
+    width: 534px;
+    height: 30px;
+    border-top: 2px solid #0a33ad;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.campeonatos2__contain--nav a {
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+}
+.campeonatos2__contain--nav a:hover {
+    background-color: #0a33ad;
+    padding: 2px 70px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.campeonatos2__contain--nav .a {
+    background-color: #0a33ad;
+    padding: 2px 70px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.campeonatos2__contain--premios {
+    width: 534px;
+    height: 200px;
+    background-color: #0a33ad;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.campeonatos2__contain--premios img {
+    width: 211px;
+    height: 148px;
+}
+.campeonatos2__contain--premios div {
+    width: 232px;
+    height: 77%;
+}
+.campeonatos2__contain--premios div h6 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2px;
+}
+.campeonatos2__contain--premios div p {
+    font-size: 1.6rem;
+    color: white;
+}
+.campeonatos2__contain--info {
+    width: 534px;
+    height: 189px;
+    padding: 20px;
+    background-color: #0a33ad;
+    display: flex;
+    position: relative;
+}
+.campeonatos2__contain--info img {
+    width: 211px;
+    height: 148px;
+    margin-right: 12px;
+}
+.campeonatos2__contain--info p {
+    font-size: 1.4rem;
+    color: white;
+}
+.campeonatos2__contain--info a {
+    position: absolute;
+    color: white;
+    background-color: #95e61c;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    right: 22px;
+    bottom: 24px;
+}
+.campeonatos2__contain--info a:hover {
+    background-color: rgb(180, 248, 77);
+}
+
+/* AQUI ES CSS DE: ReoPerfil-Cancha */
+
+.campeonatos2__contain--direccion {
+    width: 534px;
+    height: 189px;
+    padding: 20px;
+    background-color: #0a33ad;
+}
+.campeonatos2__contain--direccion h5 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 15px;
+}
+.campeonatos2__contain--direccion p {
+    font-size: 1.6rem;
+    color: white;
+}
+
+/* AQUI ES CSS DE: ReoPerfil-Reglas */
+.campeonatos2__contain--direccion {
+    width: 534px;
+    height: 189px;
+    padding: 20px;
+    background-color: #0a33ad;
+}
+.campeonatos2__contain--direccion a{
+    color: white;
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    color: rgb(238, 238, 238);
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #000f3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+}
+header img {
+    width: 150px;
+}
+.header__email {
+
+}
+.header__email .input1 {
+    width: 250px;
+    height: 30px;
+    margin-right: 5px;
+    outline: none;
+    border-radius: 30px;
+    padding: 0px 6px 0px 6px;
+}
+header a {
+    padding: 4px 9px;
+    border-radius: 30px;
+    background-color: rgb(207, 204, 204);
+    font-size: 1.4rem;
+    color: rgb(65, 64, 64);
+    text-decoration: none;
+}
+header a:active {
+    background-color: gray;
+}
+header button:hover {
+    cursor: pointer;
+}
+
+/* Aqui inicia la parte del main*/
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url('./img-reo-sport/cancha-futbol-fondo.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.contenido {
+    width: 65%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 130px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+/* Esto es para el estilo de la barra del contenido */
+.contenido::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.contenido::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+.contenido::-webkit-scrollbar-button:increment,.contenido::-webkit-scrollbar-button {
+    display: none;
+}
+.contenido::-webkit-scrollbar-thumb {
+    background-color: #9844;
+    border-radius: 20px;
+    border: 2px solid #000f3e;
+}
+.contenido::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+/* Hasta aqui termina el estilo de la barra */
+
+.contenido nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.contenido nav .barra-nav {
+    width: 95%;
+    height: 50px;
+    background-color: #30a9ce;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+.contenido nav .barra-nav .li1 {
+    text-align: center;
+    align-self: center;
+    border-right: 1px solid white;
+    display: inline-block;
+    padding: 13px 0px;
+}
+.contenido nav .barra-nav .li3 {
+    text-align: center;
+    align-self: center;
+}
+
+.contenido nav .barra-nav li a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.contenido nav .barra-nav li a:hover {
+    color: black;
+}
+.contenido nav .barra-nav li a:active {
+    color: white;
+}
+
+/* Aqui ya empiezan la parte de torneos y demas */
+
+.contenido__preguntas {
+    margin-top: 15px;
+    height: 575px;
+    width: 100%;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.contenido__preguntas h2 {
+    font-size: 3.3rem;
+    margin-bottom: 8px;
+}
+.contenido__preguntas p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+/* Aqui empieza el footer */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer__politicas {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer__politicas--container li a {
+    font-size: 1.4rem;
+    color: rgb(238, 238, 238);
+}
+.footer__politicas--container .celular {
+    font-size: 1.4rem;
+}
+.footer__politicas p {
+    font-size: 1.3rem;
+}
+.footer__redes {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__redes li a img {
+    width: 38px;
+    /* background-color: white; */
+    border-radius: 10px;
+    filter: invert(1);
+    opacity: 0.7;
+}
+.footer__redes li a img:hover {
+    opacity: 1;
+}
+
+ /* Esta es la parte de derecha para la suscripcion */
+
+.suscripcion {
+    width: 35%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.suscripcion__informacion {
+    width: 90%;
+    height: 40%;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.suscripcion__informacion h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.suscripcion__informacion p {
+    font-size: 2rem;
+}
+.suscripcion__ingreso {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+.suscripcion__ingreso--container {
+    width: 85%;
+    height: 100%;
+    padding-top: 50px;
+    position: relative;
+}
+.suscripcion__ingreso--container .i {
+    outline: none;
+    font-size: 1.6rem;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.suscripcion__ingreso--container .nombre {
+    width: 169px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+}
+.suscripcion__ingreso--container .apellido {
+    width: 169px;
+}
+.suscripcion__ingreso--container .correo {
+    display: block;
+    width: 349px;
+    margin-bottom: 20px;
+}
+.suscripcion__ingreso--container .cel {
+    display: block;
+    width: 349px;
+    margin-bottom: 50px;
+}
+.suscripcion__ingreso--container .boton {
+    background-color: rgb(149, 230, 28);
+    color: white;
+    font-size: 2.5rem;
+    padding: 7px 17px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 110px;
+}
+.suscripcion__ingreso--container .whatsap {
+    position: absolute;
+    right: -51px;
+    bottom: 70px;    
+}
