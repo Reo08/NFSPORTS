@@ -142,6 +142,9 @@ main {
     font-size: 4.4rem;
     margin-bottom: 10px;
 }
+.contenido__nosotros img {
+    width: 390px;
+}
 .contenido__nosotros p {
     font-size: 2rem;
     margin-top: 20px;
